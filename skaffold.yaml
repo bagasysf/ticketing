@@ -4,13 +4,13 @@ manifests:
   rawYaml:
     - ./infra/k8s/*
 build:
-  local:
-    push: false
-  # googleCloudBuild:
-  #   projectId: arched-cabinet-419817
+  # local:
+  #   push: false
+  googleCloudBuild:
+    projectId: arched-cabinet-419817
   artifacts:
-    - image: bagasysf/auth
-      # - image: us.gcr.io/arched-cabinet-419817/auth
+    # - image: bagasysf/auth
+    - image: us.gcr.io/arched-cabinet-419817/auth
       context: auth
       docker:
         dockerfile: Dockerfile
