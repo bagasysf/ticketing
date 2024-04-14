@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: auth
-          image: us.gcr.io/arched-cabinet-419817/auth
+          image: bagasysf/auth
+          # image: us.gcr.io/arched-cabinet-419817/auth
 ---
 apiVersion: v1
 kind: Service
